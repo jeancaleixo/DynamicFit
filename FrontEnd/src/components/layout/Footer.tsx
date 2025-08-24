@@ -2,14 +2,14 @@ import { Button } from "@/components/ui/button"
 
 export default function Footer() {
   return (
-    <footer className="bg-white">
+    <footer className="bg-gray-800 text-white">
       <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="lg:flex lg:items-start lg:gap-8">
 
           <div className="mt-8 grid grid-cols-2 gap-8 lg:mt-0 lg:grid-cols-5 lg:gap-y-16">
 
             <div className="col-span-2 sm:col-span-1">
-              <p className="font-medium text-gray-900">TELEFONE</p>
+              <p className="font-medium">TELEFONE</p>
 
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
@@ -19,7 +19,7 @@ export default function Footer() {
             </div>
 
             <div className="col-span-2 sm:col-span-1">
-              <p className="font-medium text-gray-900">LOCAIS</p>
+              <p className="font-medium">LOCAIS</p>
 
               <ul className="mt-6 space-y-4 text-sm">
 
@@ -31,7 +31,7 @@ export default function Footer() {
             </div>
 
             <div className="col-span-2 sm:col-span-1">
-              <p className="font-medium text-gray-900">HORÁRIOS</p>
+              <p className="font-medium">HORÁRIOS</p>
 
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
@@ -46,7 +46,7 @@ export default function Footer() {
             </div>
 
             <div className="col-span-2 sm:col-span-1">
-              <p className="font-medium text-gray-900">Legal</p>
+              <p className="font-medium">Legal</p>
 
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
@@ -56,17 +56,17 @@ export default function Footer() {
             </div>
 
             <div className="col-span-2 sm:col-span-1 mx-16 my-10">
-              <Button variant="outline">Entre Em Contato</Button>
+              <Button variant="outline">ENTRE EM CONTATO</Button>
             </div>
 
             <ul className="col-span-2 flex justify-start gap-6 lg:col-span-5 lg:justify-end">
 
               <li>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/dynamicfit_orquideas?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                   rel="noreferrer"
                   target="_blank"
-                  className="text-gray-700 transition hover:opacity-75"
+                  className=" transition hover:opacity-75"
                 >
                   <span className="sr-only">Instagram</span>
 
@@ -86,7 +86,7 @@ export default function Footer() {
 
         <div className="mt-8 border-t border-gray-100 pt-8">
           <div className="sm:flex sm:justify-between">
-            <p className="text-xs text-gray-500">&copy; 2025. Desenvolvido por Jean De Castro Aleixo.</p>
+            <p className="text-xs">&copy; 2025. Desenvolvido por Jean De Castro Aleixo.</p>
           </div>
         </div>
       </div>

@@ -1,12 +1,25 @@
 import './App.css'
 import Header from "./components/layout/Header"
 import Footer from "./components/layout/Footer"
+import Hero from './components/sections/Hero'
+import AboutUs from './components/sections/AboutUs'
+import CheckIn from './components/sections/CheckIn'
+import Team from './components/sections/Team'
+import Modalities from './components/sections/Modalities'
+import Space from './components/sections/Space'
+import Founder from './components/sections/Founder'
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col bg-gray-900">
+    <div>
       <Header />
-      <main className="flex-1 pt-16"></main>
+      <Hero />
+      <AboutUs />
+      <Founder />
+      <CheckIn />
+      <Team />
+      <Modalities />
+      <Space />
       <Footer />
     </div>
   )

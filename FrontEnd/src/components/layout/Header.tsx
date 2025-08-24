@@ -6,20 +6,20 @@ export default function Header() {
 
     const links = [
         { href: '#sobre', label: 'Sobre Nós' },
-        { href: '#historia', label: 'História' },
-        { href: '#modalidades', label: 'Modalidades' },
+        { href: '#fundador', label: 'Fundador' },
         { href: '#equipe', label: 'Equipe' },
+        { href: '#modalidades', label: 'Modalidades' },
         { href: '#unidades', label: 'Unidades' },
     ];
 
     return (
-        <header className="bg-gray-800 border-b border-gray-700 fixed inset-x-0 top-0 z-50">
+        <header className="bg-gray-800 border-b border-gray-700">
             <div className="flex h-16 items-center justify-between px-4 sm:px-6 lg:px-12">
-                <a href="#" className="flex items-center gap-3 group shrink-0">
+    <a href="#" className="flex items-center gap-3 group md:shrink-0">
                     <img
                         src={HeaderLogo}
                         alt="Logo Dynamic Fit"
-                        className="h-24 select-none"
+            className="h-8 sm:h-10 md:h-16 select-none"
                         draggable={false}
                     />
                     <span className="text-lg sm:text-base font-semibold tracking-wide">
@@ -29,7 +29,7 @@ export default function Header() {
                 </a>
 
                 <nav aria-label="Principal" className="hidden md:block">
-                    <ul className="flex items-center gap-8 text-[11px] font-medium tracking-wide text-white uppercase">
+                    <ul className="flex items-center gap-8 text-[14px] font-medium tracking-wide text-white uppercase">
                         {links.map(l => (
                             <li key={l.href}><a className="hover:text-indigo-400 transition-colors" href={l.href}>{l.label}</a></li>
                         ))}
@@ -38,7 +38,7 @@ export default function Header() {
 
                 <button
                     onClick={() => setOpen(o => !o)}
-                    className="md:hidden inline-flex items-center justify-center rounded-md p-2 text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-800 transition"
+                    className="md:hidden relative inline-flex items-center justify-center h-10 w-10 rounded-md text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-800 transition"
                     aria-label="Abrir menu"
                     aria-expanded={open}
                 >
@@ -49,7 +49,7 @@ export default function Header() {
                         <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5" />
                     </svg>
                     <svg
-                        className={`absolute h-6 w-6 transition-transform ${open ? 'scale-100' : 'scale-0'}`}
+                        className={`h-6 w-6 transition-transform ${open ? 'scale-100' : 'scale-0'}`}
                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                     </svg>
